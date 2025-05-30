@@ -1,0 +1,243 @@
+
+/* style.css - Gilberto Tour */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #004466;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  height: 100px;
+  margin-right: 3rem;
+   animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+header h1 {
+  margin: -5px;
+  margin-top: -1rem;
+  font-size: 1.8rem;
+  flex-grow: 1;
+  
+}
+
+.instagram-icon {
+  width: 30px;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.destaque {
+  position: relative;
+  text-align: center;
+  background-color: #eef6f8;
+  padding: 1rem;
+}
+
+.destaque img {
+  max-width:50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.destaque .info {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.destaque strong {
+  color: #e60000;
+  font-size: 1.2rem;
+}
+
+.destinos {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.destinos h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.info {
+  
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #e60000; 
+  
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.botoes button {
+  background-color: #0077aa;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botoes button:hover {
+  background-color: #005577;
+  transform: translateY(-3px);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.whatsapp-expand {
+  background-color: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.6rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+
+.whatsapp-expand img {
+  width: 50px;
+  height: 50px;
+  animation: pulse 1.8s infinite;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-expand .whatsapp-text {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.4s ease;
+  font-weight: 500;
+}
+
+.whatsapp-expand:hover {
+  width: 200px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+.whatsapp-expand:hover .whatsapp-text {
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.tooltip {
+  background-color: #25D366;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+footer {
+  background-color: #004466;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .botoes button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+
+.botoes img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
+.instagram-float {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+
+.logo-float {
+ 
+  top: 20px;
+  left: 20px;
+ 
+}
+.logo-nome {
+ 
+  top: 60px;
+ 
+  color: white;
+  font-size: 1.8rem;
+}
+.instagram-float-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
