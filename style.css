@@ -212,7 +212,13 @@ footer {
     margin-top: 0.5rem;
     font-size: 1.6rem;
   }
-
+    .info {
+  
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #045f75; 
+  
+}
   .botoes button {
     width: 100%;
     max-width: 280px;
