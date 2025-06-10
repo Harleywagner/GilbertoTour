@@ -27,6 +27,7 @@ header .logo {
 header h1 {
   margin: -5px;
   margin-top: -1rem;
+  margin-left: -3rem;
   font-size: 1.8rem;
   flex-grow: 1;
   
