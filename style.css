@@ -140,16 +140,16 @@ header h2 {
   align-items: center;
   gap: 10px;
   padding: 0.6rem;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .whatsapp-expand img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   animation: pulse 1.8s infinite;
   transition: transform 0.3s ease;
 }
@@ -239,6 +239,8 @@ footer {
   transition: transform 0.3s ease;
 }
 .facebook-float {
+  width: 30px;
+  height: 30px;
   position: fixed;
   top: 80px;
   right: 20px;
@@ -247,6 +249,8 @@ footer {
 }
 
 .instagram-float {
+  width: 30px;
+  height: 30px;
   position: fixed;
   top: 20px;
   right: 20px;
