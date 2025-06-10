@@ -238,7 +238,13 @@ footer {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
-
+.facebook-float {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
 
 .instagram-float {
   position: fixed;
