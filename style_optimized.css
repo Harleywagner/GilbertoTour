@@ -1,0 +1,519 @@
+/* style_optimized.css - Gilberto Tour - Versão Otimizada */
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Reset e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #ECF0F1 0%, #BDC3C7 100%);
+  color: #34495E;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 80px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção de destaque */
+.destaque {
+  background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
+  padding: 3rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.destaque::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.destaque-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destaque img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.destaque img:hover {
+  transform: translateY(-5px);
+}
+
+.destaque .info {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.destaque h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+.destaque p {
+  font-size: 1.1rem;
+  color: #ECF0F1;
+  margin: 0.5rem 0;
+}
+
+/* Seção de destinos */
+.destinos {
+  padding: 4rem 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destinos h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2C3E50;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.destinos h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #1ABC9C, #F39C12);
+  border-radius: 2px;
+}
+
+/* Grid de destinos */
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.destino-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.destino-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.destino-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.destino-button:hover {
+  transform: scale(1.05);
+}
+
+.destino-image {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: filter 0.3s ease;
+}
+.fo {
+  background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
+}
+.fo-image {
+  padding: 10px 10px 10px 10px;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 40px;
+  transition: filter 0.3s ease;
+  box-shadow: 35px 25px 55px rgba(0, 17, 3, 0.144);
+}
+.destino-card:hover .destino-image {
+  filter: brightness(1.1);
+}
+
+.destino-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #2C3E50;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.destino-card:hover .destino-title {
+  color: #1ABC9C;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.whatsapp-expand {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.8rem;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-expand img {
+  width: 35px;
+  height: 35px;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-text {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.4s ease;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.whatsapp-expand:hover {
+  width: 220px;
+  padding: 0.8rem 1.5rem;
+}
+
+.whatsapp-expand:hover .whatsapp-text {
+  opacity: 1;
+}
+
+/* Ícones sociais flutuantes */
+.social-float {
+  position: fixed;
+  right: 25px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.social-float:hover {
+  transform: scale(1.1);
+}
+
+.instagram-float {
+  top: 25px;
+}
+
+.facebook-float {
+  top: 85px;
+}
+
+.social-float img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 2.5s infinite;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+  color: white;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1ABC9C, #F39C12, #E74C3C);
+}
+
+footer p {
+  margin: 0.5rem 0;
+  line-height: 1.8;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #1ABC9C;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #F39C12;
+}
+
+footer a img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+footer a:hover img {
+  transform: scale(1.1);
+}
+
+/* Animações */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.destino-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.destino-card:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.destino-card:nth-child(3n) {
+  animation-delay: 0.2s;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .destaque {
+    padding: 2rem 1rem;
+  }
+  
+  .destaque img {
+    max-width: 80%;
+  }
+  
+  .destaque h3 {
+    font-size: 1.4rem;
+  }
+  
+  .destinos {
+    padding: 3rem 1rem;
+  }
+  
+  .destinos h2 {
+    font-size: 2rem;
+  }
+  
+  .botoes {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .destino-image {
+    width: 160px;
+    height: 100px;
+  }
+  
+  .whatsapp-expand {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .whatsapp-expand img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social-float img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer {
+    padding: 2rem 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .destaque img {
+    max-width: 95%;
+  }
+  
+  .botoes {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+  
+  .destino-image {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+/* Efeitos de hover adicionais */
+.destino-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(243, 156, 18, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.destino-card:hover::before {
+  opacity: 1;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Melhorias de acessibilidade */
+.destino-button:focus,
+.whatsapp-expand:focus,
+.social-float:focus {
+  outline: 3px solid #F39C12;
+  outline-offset: 2px;
+}
+
+/* Loading state para imagens */
+.destino-image {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.destino-image[src] {
+  animation: none;
+  background: none;
+}
+
