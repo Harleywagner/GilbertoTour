@@ -412,6 +412,9 @@ footer a:hover img {
   .destinos {
     padding: 3rem 1rem;
   }
+  .foto {
+    padding: 3rem 1rem;
+  }
   
   .destinos h2 {
     font-size: 2rem;
@@ -427,6 +430,10 @@ footer a:hover img {
     height: 100px;
   }
   
+   .foto-image {
+    width: 160px;
+    height: 100px;
+  }
   .whatsapp-expand {
     width: 55px;
     height: 55px;
@@ -462,6 +469,11 @@ footer a:hover img {
     width: 200px;
     height: 120px;
   }
+  .foto-image {
+    width: 160px;
+    height: 100px;
+  }
+  
 }
 
 /* Efeitos de hover adicionais */
@@ -491,13 +503,20 @@ html {
 /* Melhorias de acessibilidade */
 .destino-button:focus,
 .whatsapp-expand:focus,
-.social-float:focus {
+.social-float:focus
+.foto-image {
   outline: 3px solid #F39C12;
   outline-offset: 2px;
 }
 
 /* Loading state para imagens */
 .destino-image {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.foto-image {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
