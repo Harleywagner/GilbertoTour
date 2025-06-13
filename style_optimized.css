@@ -12,15 +12,18 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(135deg, #ECF0F1 0%, #BDC3C7 100%);
-  color: #34495E;
+  background: linear-gradient(135deg, #f8fafa 0%, #1a8d8d 150%);
+ 
+background-size: cover;
+
+  color: #091016;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+  background: linear-gradient(135deg, #8fc3f7 0%, #34495E 100%);
   color: white;
   padding: 1.5rem 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -37,7 +40,7 @@ header {
 }
 
 .logo {
-  height: 80px;
+  height: 100px;
   transition: transform 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
@@ -65,7 +68,7 @@ img {
   overflow: hidden;
 }
 .destaque {
-  background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
+  background: linear-gradient(135deg, #6beff8 0%, #093f6b 100%);
   padding: 3rem 1rem;
   text-align: center;
   position: relative;
@@ -117,7 +120,7 @@ img {
 }
 
 .destaque p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: #ECF0F1;
   margin: 0.5rem 0;
 }
@@ -132,9 +135,17 @@ img {
 
 .destinos h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 700;
-  color: #2C3E50;
+  color: #f8f8f8;
+  margin-bottom: 3rem;
+  position: relative;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #080808;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -167,7 +178,7 @@ img {
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 15px;
   background: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -199,9 +210,7 @@ img {
   border-radius: 12px;
   transition: filter 0.3s ease;
 }
-.fo {
-  background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
-}
+
 .fo-image {
   padding: 10px 10px 10px 10px;
   width: 500px;
@@ -307,7 +316,7 @@ img {
 
 /* Footer */
 footer {
-  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+  background: linear-gradient(135deg, #8fc3f7 0%, #34495E 100%);
   color: white;
   padding: 3rem 2rem 2rem;
   text-align: center;
@@ -399,7 +408,7 @@ footer a:hover img {
   }
   
   .logo {
-    height: 60px;
+    height: 100px;
   }
   
   header h1 {
