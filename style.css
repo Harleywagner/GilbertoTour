@@ -62,7 +62,15 @@ header h2 {
   50% { transform: scale(1.2); }
   100% { transform: scale(1); }
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+.container-imagem, .galeria, .imagem-box {
+  width: 100%;
+  overflow: hidden;
+}
 .destaque {
   position: relative;
   text-align: center;

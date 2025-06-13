@@ -55,6 +55,15 @@ header h1 {
 }
 
 /* Seção de destaque */
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+.container-imagem, .galeria, .imagem-box {
+  width: 100%;
+  overflow: hidden;
+}
 .destaque {
   background: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
   padding: 3rem 1rem;
